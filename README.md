@@ -39,24 +39,24 @@ Remote branch merupakan branch yang sudah di kirim ke remote yang berarti orang 
 
 ## SDLC dan Figma Introduction
 ### SDLC
-Software Development Life Cycle merupakan sebuah proses yang digunakan oleh industri software untuk mendesign, mengembangkan dan menguji aplikasi dengan kualitas yang tinggi. SDLC memiliki tujuan untuk memproduksi sebuah aplikasi yang memiliki kualitas tinggi sesuai dengan ekspektasi dari customer.
+>Software Development Life Cycle merupakan sebuah proses yang digunakan oleh industri software untuk mendesign, mengembangkan dan menguji aplikasi dengan kualitas yang tinggi. SDLC memiliki tujuan untuk memproduksi sebuah aplikasi yang memiliki kualitas tinggi sesuai dengan ekspektasi dari customer.
 
 ### Tahapan pengembangan pada metode SDLC 
 > Planning -> Defining -> Designing -> Building -> Testing -> Deployment -> Maintenance
-## Release Planning
+### Release Planning
 Planning atau requirement analysis merupakan tahapan yang penting dalam fundamental SDLC.
 
 ### Requirement analysis
-Yaitu merencanakan input atau kebutuhan dari customer. Planning juga menjadi tempat untuk melakukan kebutuhan untuk quality assurance dan identifikasi resiko dalam sebuah pengembangan aplikasi.
+>Yaitu merencanakan input atau kebutuhan dari customer. Planning juga menjadi tempat untuk melakukan kebutuhan untuk quality assurance dan identifikasi resiko dalam sebuah pengembangan aplikasi.
 ### Sprint Management
 
 ### Defining requirements
-Defining requirement merupakan tahapan yang mendefinisikan secara detail mengenai input dari customer. Memberikan gambaran output sebuah dokumen yang isinya seluruh kebutuhan produk yang akan didesain dan dikembangkan.
+>Defining requirement merupakan tahapan yang mendefinisikan secara detail mengenai input dari customer. Memberikan gambaran output sebuah dokumen yang isinya seluruh kebutuhan produk yang akan didesain dan dikembangkan.
 ### Figma
 
-Figma merupakan editor grafis vektor dan alat prototyping berbasis web dan bersifat free.
+>Figma merupakan editor grafis vektor dan alat prototyping berbasis web dan bersifat free.
 
->#  Kotlin Basic
+#  Kotlin Basic
 
 ## Number
  Kotlin yang menyediakan tipe data yang merepresentasikan nilai angka, baik angka bulat maupun angka desimal yaitu number.
@@ -86,26 +86,78 @@ Boolean bisa didapatkan dengan kombinasi || atau or, && atau and dan ! (negasi).
 >Arrays di dalam kotlin digunakan untuk menampung data array.
 ## List
 >List merupakan tipe data collection yang sering dipakai di dalam kotlin, ada dua macam list yaitu list (read only) dan mutable list.
-
-# Control Flow
+## Control Flow
 ## If Expressions
 >Di dalam kotlin if digunakan untuk control flow statement, termasuk dalam konteks ternary operator.
 
 ## When Expressions
 >When di dalam kotlin merupakan pengganti switch case statement dan penggunaannya lebih simple dibandingkan dengan switch case di bahasa lain.
 ## For loops
->For di dalam kotlin digunakan untuk melakukan perulangan pada sebuah data collection seperti halnya for di bahasa lain.
-```Kotlin var x = (1..100).random()
-while (x > 0) {
-   println("X: $x")
-   x--
-}
-do {
-   val y = (1..3).random()
-   println("Y: $y")
-} while (y != 1)
+> For di dalam kotlin digunakan untuk melakukan perulangan pada sebuah data collection seperti halnya for di bahasa lain.
+## While Loops
+>While di dalam kotlin digunakan untuk perulangan yang tidak menentu, while juga bisa dikombinasikan do seperti halnya di bahasa lainnya.
+## Break and continue in loops
+>Kotlin mendukung untuk melakukan pemberhentian dan penerusan sebuah perulangan menggunakan keyword break dan continue.
 
-
-````
-
+## Returns Loops
+>Kotlin mendukung untuk memberhentikan dan melanjutkan perulangan menggunakan return, namun hanya dalam konteks method atau function saja.
+# Iterator
+# Classes and Inheritance
+## Constructor
+>Class pada kotlin memiliki primary constructor dan bisa saja memiliki tambahan secondary constructor atau lebih.
+## Classs
+>Kotlin dalam membuat class menggunakan sebuah keyword class, kotlin juga mendukung secara penuh konsep object oriented programming.
+## Class member
+>Di dalam class kotlin mungkin memiliki keanggotaan seperti: constructor, initializer block, functions, properties, nested and inner class dan object declarations.
+## Inheritance
+>Semua class pada kotlin bersifat final artinya tidak dapat diturunkan, untuk membuat inheritance perlu ditambahkan keyword open sebelum class.
+## Overiding
+>Secara default properties dan juga function di dalam kotlin bersifat final sama seperti dengan class, untuk melakukan overriding perlu menambahkan keyword open juga.
+## Calling the superclass implementation
+>Di dalam inheritance kotlin subclass dapat memanggil sifat dari superclass menggunakan keyword super.
+## Abstract Classes
+>Class dan member class di dalam kotlin dapat dideklarasikan sebagai abstract yang berarti tidak memiliki implementasi didalamnya.
+# Properties and Fields
+## Declaring properties
+>Properti di dalam class kotlin dapat dideklarasikan menggunakan keyword var (mutable) atau properti read only dengan keyword val.
+## Getters and setters
+>Melakukan enkapsulasi pada kotlin, biasanya menggunakan getters and setters. Getters bisa dilakukan pada semua jenis variabel, sedangkan setters hanya bisa dilakukan pada mutable variable (var).
+## Backing fields
+>Fields di dalam kotlin dapat di back up menggunakan initializer value, sehingga pada field mempunyai default value.
+## Backing properties
+>Properti di dalam kotlin dapat di back up menggunakan properti lainnya, sehingga memberikan default value kepada properties tersebut.
+## Compile time constants
+>Value properti yang hanya diketahui waktu proses kompilasi saja dapat menggunakan keyword const.
+## Lated initialized properties and variables
+>Di dalam kotlin terdapat sebuah variabel not null yang akan diassign secara telat, misal assign value dari dependency injection atau dari proses Asynchronous seperti pemanggilan API.
+# Interface
+## Interface
+>Interface di kotlin sama seperti abstract class, perbedaannya interface tidak bisa store state pada properties.
+## Implementing interface
+>Sebuah class dapat melakukan implementasi dari satu interface atau lebih.
+## Properties interface
+>Di dalam interface dapat mendeklarasikan variable, namun tidak dapat assign value di variabel tersebut karena di dalam interface properties bersifat abstract.
+## Interface inheritance
+>Interface dapat diturunkan ke interface maupun class lainnya, kemudian dapat mengimplementasikan member dari interface tersebut.
+# Extension
+## Extension function
+>Kotlin menyediakan kemampuan untuk mewariskan sebuah function pada class tanpa harus mewariskan class tersebut.
+## Nullable receiver
+>Kotlin dapat memanggil ekstensions method pada suatu object yang bisa bernilai null.
+## Extension roperties
+>Sama seperti dengan function, kotlin dapat melakukan ekstension properties.
+## Companion object extensions
+>Kotlin dapat membuat extension method pada singleton class atau pada companion object.
+## Scope extensions
+>Extension method harus berada di bawah nama packages sehingga extension method dapat dipanggil secara global.
+## Declaring extensions as members
+>Di dalam class dapat mendeklarasikan extension untuk class lainnya.
+## Data Class
+>Kotlin menyediakan class yang digunakan hanya untuk menyimpan data yaitu data class. Data classes harus mempunyai constructor dengan parameter minimal satu.
+## Properties declared in the class body
+>Data class pada kotlin dapat ditambahkan properties di dalam data class. 
+## Copying
+>Data class pada kotlin menyediakan function copy yang digunakan untuk mengkopi properties pada data class lainnya.
+## Data classes and destructuring declarations
+>Properties di dalam data class dapat dipecah menjadi sebuah variabel menggunakan destructuring declarations.
 </div>
