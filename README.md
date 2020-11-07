@@ -1,4 +1,4 @@
->># Materials 
+># Materials 
 ## Git Introduction
 <div style = "text-align:justify">
 Git adalah vesion kontrol system yang digunakan oleh team developer dalam skala yang besar atau kecil. Setiap operasi tersedia secara lokal tanpa koneksi internet yaitu akan di check ketika online.
@@ -7,7 +7,7 @@ Git adalah vesion kontrol system yang digunakan oleh team developer dalam skala 
 ### Repo git
 Mendapatkan repository git di dalam project, bisa dengan menggunakan dua cara:
 1. $ git init untuk menginisialisasi repository git pada project, kemudian akan membuat folder `.git` yang berisikan semua file repository yang akan dibutuhkan git.
-2. $ git clone https://github.com/abdur-rohman2883/learn-git untuk menduplikasi repository yang sudah ada, pada perintah tersebut akan menduplikasi project sesuai dengan namanya dan di dalam project tersebut sudah terdapat folder `.git`.
+2. $ git clone https://github.com/### untuk menduplikasi repository yang sudah ada, pada perintah tersebut akan menduplikasi project sesuai dengan namanya dan di dalam project tersebut sudah terdapat folder `.git`.
 
 ### Menyimpan Ke GIT
 
@@ -56,7 +56,7 @@ Defining requirement merupakan tahapan yang mendefinisikan secara detail mengena
 
 Figma merupakan editor grafis vektor dan alat prototyping berbasis web dan bersifat free.
 
->>#  Kotlin Basic
+>#  Kotlin Basic
 
 ## Number
  Kotlin yang menyediakan tipe data yang merepresentasikan nilai angka, baik angka bulat maupun angka desimal yaitu number.
@@ -68,7 +68,7 @@ Figma merupakan editor grafis vektor dan alat prototyping berbasis web dan bersi
 ## Operation
 >Kotlin mendukung proses aritmatika menggunakan operator ( + ), ( - ), ( / ), ( * ) dan ( % ).
 ## Strings
->Kotlin menyediakan tipe data text yang berisikan sejumlah 
+>Kotlin menyediakan tipe data text yang berisikan sejumlah
 ## Angka genap
 1. karakter.
 2. String
@@ -95,58 +95,4 @@ Boolean bisa didapatkan dengan kombinasi || atau or, && atau and dan ! (negasi).
 >When di dalam kotlin merupakan pengganti switch case statement dan penggunaannya lebih simple dibandingkan dengan switch case di bahasa lain.
 ## For loops
 >For di dalam kotlin digunakan untuk melakukan perulangan pada sebuah data collection seperti halnya for di bahasa lain.
-## 
-
-
-
-
-
-
-## Kotlin Introduction
-
-## Kotlin Basic
-
-## Kotlin Basic
-
-##  
-## Kotlin Class & Objects
-
-  
-
-# Materials
-
-## Kotlin Classes and Objects
-
-## Kotlin Functions & Lambdas
-
-## Kotlin Standard
-
-
-# Day 5
-
-
-# Kotlin Collection
-
-
-## Materials
-
-## Review Task
-
-## Kotlin Collection
-
-## Kotlin Language Construct
-
-  
-  
-
-## Task
-
-## Kotlin OOP
-
-
-## Sharing Code
-
-## Material
-
-## Task
 </div>
