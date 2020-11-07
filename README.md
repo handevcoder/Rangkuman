@@ -95,4 +95,17 @@ Boolean bisa didapatkan dengan kombinasi || atau or, && atau and dan ! (negasi).
 >When di dalam kotlin merupakan pengganti switch case statement dan penggunaannya lebih simple dibandingkan dengan switch case di bahasa lain.
 ## For loops
 >For di dalam kotlin digunakan untuk melakukan perulangan pada sebuah data collection seperti halnya for di bahasa lain.
+```Kotlin var x = (1..100).random()
+while (x > 0) {
+   println("X: $x")
+   x--
+}
+do {
+   val y = (1..3).random()
+   println("Y: $y")
+} while (y != 1)
+
+
+````
+
 </div>
